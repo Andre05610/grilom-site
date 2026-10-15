@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRILOM | Roupas que acompanham seu estilo</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f6f2;
+      color: #171717;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+      letter-spacing: 7px;
+    }
+    header p {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      padding: 15px 8px;
+      background: white;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #171717;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      background: #dedbd3;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin: 0 0 15px;
+    }
+    .hero p { line-height: 1.6; }
+    .botao {
+      display: inline-block;
+      margin-top: 15px;
+      background: #111;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+    }
+    .produtos {
+      padding: 35px 16px;
+      text-align: center;
+    }
+    .grade {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 700px;
+      margin: 25px auto;
+    }
+    .produto {
+      background: white;
+      padding: 25px 10px;
+      min-height: 135px;
+    }
+    .produto .simbolo { font-size: 34px; }
+    .produto h3 { font-size: 16px; }
+    footer {
+      padding: 25px 15px;
+      background: #111;
+      color: white;
+      text-align: center;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GRILOM</h1>
+    <p>ROUPAS QUE TE ACOMPANHAM</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#colecao">Coleção</a>
+    <a href="#sobre">Sobre nós</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <h2>Seu estilo. Sua identidade.</h2>
+    <p>Vista quem você é. Descubra a nova coleção GRILOM.</p>
+    <a class="botao" href="#colecao">Conhecer coleção</a>
+  </section>
+
+  <section class="produtos" id="colecao">
+    <h2>EXPLORE A GRILOM</h2>
+    <p>Encontre seu próximo estilo.</p>
+    <div class="grade">
+      <div class="produto">
+        <div class="simbolo">✦</div>
+        <h3>Streetwear</h3>
+        <p>Estilo urbano</p>
+      </div>
+      <div class="produto">
+        <div class="simbolo">◇</div>
+        <h3>Elegância</h3>
+        <p>Visual sofisticado</p>
+      </div>
+      <div class="produto">
+        <div class="simbolo">○</div>
+        <h3>Casual</h3>
+        <p>Conforto diário</p>
+      </div>
+      <div class="produto">
+        <div class="simbolo">✧</div>
+        <h3>Básicos</h3>
+        <p>Essenciais do guarda-roupa</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="produtos" id="sobre">
+    <h2>ESSA É A GRILOM</h2>
+    <p>Roupas que te acompanham em cada momento.</p>
+  </section>
+
+  <footer>
+    <p>GRILOM © 2026</p>
+    <p>ROUPAS QUE TE ACOMPANHAM</p>
+  </footer>
+</body>
+</html>
