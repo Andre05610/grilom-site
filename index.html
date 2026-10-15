@@ -4,90 +4,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GRILOM | Moda e Identidade</title>
+<title>GRILOM | Roupas que te acompanham</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#f5f4f0;color:#151515;font-family:Arial,sans-serif}
-header{background:#111;color:white;text-align:center;padding:27px 12px}
-.logo{font-size:38px;font-weight:900;letter-spacing:8px;margin:0}
-.slogan{font-size:10px;letter-spacing:3px;margin-top:9px}
-nav{display:flex;justify-content:center;gap:24px;background:#fff;padding:16px 8px}
-nav a{color:#111;text-decoration:none;font-size:13px}
-.hero{background:#dcd9d1;text-align:center;padding:70px 18px}
-.hero small{letter-spacing:3px}
-.hero h2{font-size:40px;line-height:1.1;margin:18px 0}
-.hero p{line-height:1.6}
-.btn{display:inline-block;background:#111;color:#fff;padding:15px 25px;text-decoration:none;margin-top:15px;font-size:12px;letter-spacing:1px}
-section{padding:38px 16px}
-.heading{text-align:center}
-.heading h2{letter-spacing:2px}
-.heading p{color:#666;font-size:14px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:850px;margin:25px auto}
-.card{background:white;text-align:center;padding-bottom:18px}
-.photo{height:180px;display:flex;align-items:center;justify-content:center;background:#e6e3dc;font-size:48px}
-.card h3{font-size:15px;margin:15px 5px 7px}
-.card p{font-size:13px;color:#555;margin:0}
-.about{text-align:center;background:#111;color:white;padding:42px 22px}
-.about p{line-height:1.7;color:#ddd;max-width:480px;margin:15px auto}
-footer{text-align:center;padding:25px;background:#f5f4f0;font-size:12px;line-height:1.8}
-@media(min-width:650px){.grid{grid-template-columns:repeat(4,1fr)}.photo{height:230px}.hero h2{font-size:58px}}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 22px 16px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+header p {
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 45px 18px 30px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+section {
+  padding: 35px 18px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.category {
+  background: #f1f1f1;
+  padding: 35px 8px;
+  text-align: center;
+  min-height: 110px;
+}
+
+.category h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.category p {
+  color: #555;
+  font-size: 12px;
+}
+
+.about {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.about strong {
+  display: block;
+  margin-top: 18px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 28px 15px;
+  font-size: 12px;
+  line-height: 2;
+}
+
+footer strong {
+  font-size: 22px;
+  letter-spacing: 4px;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1 class="logo">GRILOM</h1>
-<div class="slogan">ROUPAS QUE TE ACOMPANHAM</div>
+  <div class="logo">GRILOM</div>
+  <p>ROUPAS QUE TE ACOMPANHAM.</p>
+  <nav>
+    <a href="#colecao">COLEÇÃO</a>
+    <a href="#marca">A MARCA</a>
+  </nav>
 </header>
-<nav>
-<a href="#inicio">INÍCIO</a>
-<a href="#colecao">COLEÇÃO</a>
-<a href="#marca">A MARCA</a>
-</nav>
+
 <main>
-<div class="hero" id="inicio">
-<small>NOVA COLEÇÃO</small>
-<h2>Vista sua<br>identidade.</h2>
-<p>Seu estilo fala antes de você.<br>Encontre o seu na GRILOM.</p>
-<a class="btn" href="#colecao">EXPLORAR COLEÇÃO</a>
-</div>
-<section id="colecao">
-<div class="heading">
-<h2>EXPLORE A GRILOM</h2>
-<p>Peças para acompanhar o seu estilo.</p>
-</div>
-<div class="grid">
-<div class="card">
-<div class="photo">✦</div>
-<h3>STREETWEAR</h3>
-<p>Atitude urbana</p>
-</div>
-<div class="card">
-<div class="photo">◇</div>
-<h3>ESSENCIAIS</h3>
-<p>Estilo sem esforço</p>
-</div>
-<div class="card">
-<div class="photo">○</div>
-<h3>CASUAL</h3>
-<p>Conforto diário</p>
-</div>
-<div class="card">
-<div class="photo">✧</div>
-<h3>SOFISTICADO</h3>
-<p>Detalhes que marcam</p>
-</div>
-</div>
-</section>
-<section class="about" id="marca">
-<h2>MAIS QUE ROUPAS.</h2>
-<p>A GRILOM nasce para acompanhar você em cada momento. Uma marca feita para expressar personalidade, liberdade e identidade.</p>
-<strong>GRILOM — ROUPAS QUE TE ACOMPANHAM.</strong>
-</section>
+  <section class="hero">
+    <h1>Vista sua identidade.</h1>
+    <p>Estilo, personalidade e atitude para acompanhar você.</p>
+
+    <img src="IMG-20261012-WA5362.jpg"
+         alt="Foto de apresentação da GRILOM">
+  </section>
+
+  <section id="colecao">
+    <h2>EXPLORE A GRILOM</h2>
+
+    <div class="categories">
+      <div class="category">
+        <h3>STREETWEAR</h3>
+        <p>Atitude urbana.</p>
+      </div>
+
+      <div class="category">
+        <h3>ESSENCIAIS</h3>
+        <p>O básico bem feito.</p>
+      </div>
+
+      <div class="category">
+        <h3>CASUAL</h3>
+        <p>Conforto no dia a dia.</p>
+      </div>
+
+      <div class="category">
+        <h3>SOFISTICADO</h3>
+        <p>Detalhes que marcam.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="marca">
+    <h2>MAIS QUE ROUPAS.</h2>
+    <p>A GRILOM nasce para acompanhar você em cada momento. Uma marca feita para expressar personalidade, liberdade e identidade.</p>
+    <strong>GRILOM — ROUPAS QUE TE ACOMPANHAM.</strong>
+  </section>
 </main>
+
 <footer>
-<strong>GRILOM</strong><br>
-Moda, identidade e atitude.<br>
-© 2026 GRILOM. Todos os direitos reservados.
+  <strong>GRILOM</strong><br>
+  Moda, identidade e atitude.<br>
+  © 2026 GRILOM. Todos os direitos reservados.
 </footer>
+
 </body>
 </html>
